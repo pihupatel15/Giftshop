@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - The Gift Nest</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffaf4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #ff8fa3;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .contact-box {
+      flex: 1 1 250px;
+      background-color: #ffeef2;
+      padding: 1.5rem;
+      border-radius: 8px;
+    }
+
+    .contact-box h3 {
+      margin-top: 0;
+      color: #cc3366;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    form button {
+      background-color: #cc3366;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      .contact-info {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contact Us</h1>
+    <p>We're here to help and hear from you!</p>
+  </header>
+
+  <div class="container">
+
+    <div class="contact-info">
+      <div class="contact-box">
+        <h3>📍 Visit Us</h3>
+        <p>The Gift Nest<br>
+        123 Joy Lane<br>
+        Heartsville, CA 90210</p>
+      </div>
+
+      <div class="contact-box">
+        <h3>📞 Call Us</h3>
+        <p>(555) 123-4567</p>
+      </div>
+
+      <div class="contact-box">
+        <h3>✉️ Email Us</h3>
+        <p><a href="mailto:hello@thegiftnest.com">hello@thegiftnest.com</a></p>
+      </div>
+    </div>
+
+    <form>
+      <h2>Send Us a Message</h2>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+  </div>
+
+</body>
+</html>
